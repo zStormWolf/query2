@@ -11,8 +11,8 @@
   DTS:LocaleID="2058"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="50"
-  DTS:VersionGUID="{B808DADF-BF72-4B7E-B54C-2693CDF8D552}">
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{4B07D385-0672-4659-AAFC-C58380078498}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\dafer\Downloads\Datos.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\dafer\Downloads\Datos.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\dafer\Downloads\datos.xls;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\dafer\Downloads\datos.xls;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -70,6 +70,147 @@
         <DTS:ConnectionManager
           DTS:FileUsageType="1"
           DTS:ConnectionString="C:\Users\dafer\Downloads\Datos.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1C3453B5-AB2D-4A80-B91A-66FD28EEBD9B}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2058"
+          DTS:HeaderRowDelimiter="_x002C_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\dafer\Downloads\datos.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="customerid"
+              DTS:DTSID="{4BF35DF3-8EF4-440A-89F1-7FD00E4ED588}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="companyname"
+              DTS:DTSID="{1E292D17-E7DB-461B-81D7-0B5AFA07B8A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="orderid"
+              DTS:DTSID="{52BB5AE5-BE0D-4178-B4C8-1D245BD37ED7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="orderdate"
+              DTS:DTSID="{484C54C5-4932-4038-913F-4F8EEC6A14DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productname"
+              DTS:DTSID="{36F675FB-20CA-47B8-B534-99A1113FEDE7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="unitprice"
+              DTS:DTSID="{BC89A323-0570-48FB-8288-B8E1F4827112}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="quantity"
+              DTS:DTSID="{0E1E5563-F0D9-4F43-9B2C-DB6D321A6606}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of customerid"
+              DTS:DTSID="{8F0AC42F-E14A-405A-8858-F9E8545E824A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of companyname"
+              DTS:DTSID="{5A3A4EB0-B6EE-4129-BC74-E7EF0D08BCD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of orderid"
+              DTS:DTSID="{2D55489A-9F3B-4B84-B51E-F9733CAB5DF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of orderdate"
+              DTS:DTSID="{9C8D3EAB-A498-4D35-A0D1-1F8A871732C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of productname"
+              DTS:DTSID="{35C8552E-E762-4E92-BCBF-2E79330DEC6A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="14"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of unitprice"
+              DTS:DTSID="{F689B737-6149-497C-9021-F73BB2D774AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="14"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Copy of quantity"
+              DTS:DTSID="{67AA62B7-DFD9-4C08-B959-7E8E59C4680E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -973,6 +1114,245 @@
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow Task 1\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="2058"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[customerid]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="customerid"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customerid]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[customerid]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[companyname]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="companyname"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[companyname]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[companyname]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[orderid]"
+                      cachedDataType="i4"
+                      cachedName="orderid"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[orderid]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[orderid]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[orderdate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="orderdate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[orderdate]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[orderdate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[productname]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="productname"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[productname]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[productname]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[unitprice]"
+                      cachedDataType="cy"
+                      cachedName="unitprice"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[unitprice]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[unitprice]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[quantity]"
+                      cachedDataType="i2"
+                      cachedName="quantity"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[quantity]"
+                      lineageId="Package\Data Flow Task 1\OLE DB Source.Outputs[OLE DB Source Output].Columns[quantity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of customerid]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="Copy of customerid"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of customerid]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of customerid]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of companyname]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="Copy of companyname"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of companyname]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of companyname]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of orderid]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of orderid"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of orderid]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of orderid]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of orderdate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Copy of orderdate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of orderdate]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of orderdate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of productname]"
+                      cachedDataType="wstr"
+                      cachedLength="40"
+                      cachedName="Copy of productname"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of productname]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of productname]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of unitprice]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of unitprice"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of unitprice]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of unitprice]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].Columns[Copy of quantity]"
+                      cachedDataType="decimal"
+                      cachedName="Copy of quantity"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of quantity]"
+                      lineageId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of quantity]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[customerid]"
+                      dataType="wstr"
+                      length="5"
+                      name="customerid" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[companyname]"
+                      dataType="wstr"
+                      length="40"
+                      name="companyname" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[orderid]"
+                      dataType="i4"
+                      name="orderid" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[orderdate]"
+                      dataType="dbTimeStamp"
+                      name="orderdate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[productname]"
+                      dataType="wstr"
+                      length="40"
+                      name="productname" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[unitprice]"
+                      dataType="cy"
+                      name="unitprice" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[quantity]"
+                      dataType="i2"
+                      name="quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of customerid]"
+                      dataType="wstr"
+                      length="5"
+                      name="Copy of customerid" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of companyname]"
+                      dataType="wstr"
+                      length="40"
+                      name="Copy of companyname" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of orderid]"
+                      dataType="decimal"
+                      name="Copy of orderid"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of orderdate]"
+                      dataType="dbTimeStamp"
+                      name="Copy of orderdate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of productname]"
+                      dataType="wstr"
+                      length="40"
+                      name="Copy of productname" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of unitprice]"
+                      dataType="decimal"
+                      name="Copy of unitprice"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Copy of quantity]"
+                      dataType="decimal"
+                      name="Copy of quantity"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 3]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow Task 1\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
@@ -1199,9 +1579,19 @@
           <paths>
             <path
               refId="Package\Data Flow Task 1.Paths[Data Conversion Output]"
-              endId="Package\Data Flow Task 1\Excel Destination.Inputs[Excel Destination Input]"
+              endId="Package\Data Flow Task 1\Multicast.Inputs[Multicast Input 1]"
               name="Data Conversion Output"
               startId="Package\Data Flow Task 1\Data Conversion.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Multicast Output 1]"
+              endId="Package\Data Flow Task 1\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task 1.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task 1\Excel Destination.Inputs[Excel Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task 1\Multicast.Outputs[Multicast Output 2]" />
             <path
               refId="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
               endId="Package\Data Flow Task 1\Data Conversion.Inputs[Data Conversion Input]"
@@ -1286,39 +1676,39 @@
           Id="Package\Data Flow Task 1"
           TopLeft="566,246" />
         <NodeLayout
-          Size="210,42"
-          Id="Package\Tarea Sistema de archivos"
-          TopLeft="528,98" />
-        <NodeLayout
           Size="176,42"
           Id="Package\Tarea Ejecutar SQL"
           TopLeft="557,177" />
+        <NodeLayout
+          Size="210,42"
+          Id="Package\Tarea Sistema de archivos"
+          TopLeft="410,70" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
-          TopLeft="633,140">
+          TopLeft="515,112">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="12,37"
+              EndConnector="130,65"
               Start="0,0"
-              End="12,29.5">
+              End="130,57.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.5" />
+                    End="0,28.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.5"
-                    Point2="0,18.5"
-                    Point3="4,18.5" />
+                    Point1="0,28.5"
+                    Point2="0,32.5"
+                    Point3="4,32.5" />
                   <mssgle:LineSegment
-                    End="8,18.5" />
+                    End="126,32.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="8,18.5"
-                    Point2="12,18.5"
-                    Point3="12,22.5" />
+                    Point1="126,32.5"
+                    Point2="130,32.5"
+                    Point3="130,36.5" />
                   <mssgle:LineSegment
-                    End="12,29.5" />
+                    End="130,57.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1356,7 +1746,7 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="157,42"
           Id="Package\Data Flow Task\OLE DB Source"
@@ -1396,14 +1786,16 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1416,7 +1808,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -1432,33 +1824,37 @@
     design-time-name="Package\Data Flow Task 1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="157,42"
           Id="Package\Data Flow Task 1\OLE DB Source"
-          TopLeft="403,119" />
-        <NodeLayout
-          Size="164,42"
-          Id="Package\Data Flow Task 1\Excel Destination"
-          TopLeft="404,324" />
+          TopLeft="403,27" />
         <NodeLayout
           Size="161,42"
           Id="Package\Data Flow Task 1\Data Conversion"
-          TopLeft="399,210" />
+          TopLeft="397,111" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Data Flow Task 1\Excel Destination"
+          TopLeft="332,301" />
+        <NodeLayout
+          Size="123,42"
+          Id="Package\Data Flow Task 1\Multicast"
+          TopLeft="416,187" />
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
-          TopLeft="480.5,161">
+          TopLeft="479.5,69">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,49"
+              EndConnector="0,42"
               Start="0,0"
-              End="0,41.5">
+              End="0,34.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,41.5" />
+                    End="0,34.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1469,18 +1865,90 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task 1.Paths[Data Conversion Output]"
-          TopLeft="482.75,252">
+          TopLeft="477.5,153">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,72"
+              EndConnector="0,34"
               Start="0,0"
-              End="0,64.5">
+              End="0,26.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64.5" />
+                    End="0,26.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Multicast Output 2]"
+          TopLeft="477.5,229">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-63.5,72"
+              Start="0,0"
+              End="-63.5,64.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32"
+                    Point2="0,36"
+                    Point3="-4,36" />
+                  <mssgle:LineSegment
+                    End="-59.5,36" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-59.5,36"
+                    Point2="-63.5,36"
+                    Point3="-63.5,40" />
+                  <mssgle:LineSegment
+                    End="-63.5,64.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Data Flow Task 1\Flat File Destination"
+          TopLeft="550,300" />
+        <EdgeLayout
+          Id="Package\Data Flow Task 1.Paths[Multicast Output 1]"
+          TopLeft="496.666666666667,229">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141.333333333333,71"
+              Start="0,0"
+              End="141.333333333333,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.9470304975923" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.9470304975923"
+                    Point2="0,28.9470304975923"
+                    Point3="4,28.9470304975923" />
+                  <mssgle:LineSegment
+                    End="137.333333333333,28.9470304975923" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137.333333333333,28.9470304975923"
+                    Point2="141.333333333333,28.9470304975923"
+                    Point3="141.333333333333,32.9470304975923" />
+                  <mssgle:LineSegment
+                    End="141.333333333333,63.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
